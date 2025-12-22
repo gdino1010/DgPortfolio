@@ -36,7 +36,6 @@ body{
   margin-inline: auto;
 }
 .section{ padding: 72px 0; scroll-margin-top: calc(var(--nav-h) + 16px); }
-.lead{ font-size: 1.05rem; color: var(--muted); max-width: 62ch; }
 .muted{ color: var(--muted); }
 .accent{ color: var(--brand-1); }
 .subheading{ margin-top: 1.25rem; font-size: 1.05rem; }
@@ -76,26 +75,33 @@ body{
    Hero
    ----------------------- */
 .hero{
-  display: grid; gap: 28px; align-items: center;
+  display: grid;
+  gap: 28px;
+  align-items: center;
   padding-top: 28px;
 }
 .hero__title{
-  font-size: clamp(1.4rem, 2.2vw + 1rem, 2rem);
+  font-size: clamp(1.4rem, 2.2vw + 1rem, 3rem);
   margin: 0 0 .4rem;
 }
+
+.lead{
+    font-size: clamp(.5rem, .9vw + .5rem, 2rem);
+    color: var(--muted);
+    max-width: 62ch; }
 
 /* Chip buttons */
 .chip-row{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .chip{
   display: inline-block;
-  padding: 10px 14px;
+  padding: clamp(6px, 1vw, 10px) clamp(10px, 1.4vw, 20px);
   border-radius: 999px;
   border: 2px solid var(--chip-border);
   background: var(--chip-bg);
   color: #45659e;
   text-decoration: none;
   font-weight: 600;
-  font-size: .95rem;
+  font-size: clamp(0.85rem, 0.6vw + 0.8rem, 1.15rem);
 }
 .chip:focus{ outline: 3px solid var(--ring); outline-offset: 1px; }
 
