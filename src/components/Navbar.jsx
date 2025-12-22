@@ -3,8 +3,8 @@ function StarLogo({ size = 36 }) {
     <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true">
       <defs>
         <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#19c37d"/>
-          <stop offset="1" stopColor="#0aa368"/>
+            <stop offset="0" stopColor="rgb(0, 255, 0)"/>
+            <stop offset="1" stopColor="rgb(0, 0, 255)"/>
         </linearGradient>
       </defs>
       <polygon

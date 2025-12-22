@@ -2,16 +2,16 @@
    Base + Design Tokens
    ----------------------- */
 :root{
-  --bg: #f2f2f2;
+  --bg: #cbc9c8;
   --surface: #ffffff;
   --surface-2: #e5e7eb;
   --text: #0f172a;
   --muted: #495057;
-  --brand-1: #0c3b4a;   /* deep teal/navy */
-  --brand-2: #0a2a36;
+  --brand-1: #02354b;/* deep teal/navy */
+  --brand-2:#117d9c;
   --accent: #19c37d;    /* green accent for name + chips */
-  --chip-bg: #eefcf6;
-  --chip-border: #bff1da;
+  --chip-bg: #FFFFFF;
+  --chip-border: #45659e;
   --ring: #9ae6b4;
   --radius: 12px;
   --radius-lg: 18px;
@@ -77,18 +77,11 @@ body{
    ----------------------- */
 .hero{
   display: grid; gap: 28px; align-items: center;
-  grid-template-columns: 1.2fr .8fr;
   padding-top: 28px;
 }
 .hero__title{
   font-size: clamp(1.4rem, 2.2vw + 1rem, 2rem);
   margin: 0 0 .4rem;
-}
-.hero__art{
-  justify-self: end;
-  width: min(320px, 40vw);
-  height: 140px;
-  border-radius: 10px;
 }
 
 /* Chip buttons */
@@ -97,9 +90,9 @@ body{
   display: inline-block;
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid var(--chip-border);
+  border: 2px solid var(--chip-border);
   background: var(--chip-bg);
-  color: #0a6b48;
+  color: #45659e;
   text-decoration: none;
   font-weight: 600;
   font-size: .95rem;
