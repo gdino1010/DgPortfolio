@@ -245,30 +245,19 @@ body{
   gap: 14px 18px;
 }
 .form label{ display: grid; gap: 6px; font-weight: 600; font-size: .95rem; }
-.form input,
-.form textarea{
-  background: var(--input-bg);
-  border: 1px solid var(--input-border);
-  color: var(--text);
-  border-radius: 5px;
-  height: 30px;
-}
-
+.form input, .form textarea{
   width: 100%;
   padding: 10px 12px;
   border-radius: 10px;
-  border: 1px solid #d7dee3;
-  background: #fbfdff;
+  border: 1px solid var(--input-border);
+  background:var(--input-bg);
+  color: var(--text);
   font: inherit;
 }
-.form input:focus,
-.form textarea:focus{
-  outline: 2px solid var(--ring);
-  outline-offset: 1px;
-  border-color: var(--ring);
-  background: color-mix(in srgb, var(--input-bg), white 6%);
+.form input:focus, .form textarea:focus{
+  outline: 2px solid #325694;
+  border-color: #325694;
 }
-
 .span-2{ grid-column: 1 / -1; }
 
 .actions{ display: flex; justify-content: center; }
@@ -276,7 +265,7 @@ body{
   padding: 10px 22px;
   border-radius: 10px;
   border: none;
-  background: #4f46e5;
+  background: #325694;
   color: white;
   font-weight: 700;
   cursor: pointer;
