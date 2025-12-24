@@ -9,7 +9,7 @@
   --muted: #495057;
   --brand-1: #02354b;/* deep teal/navy */
   --brand-2:#117d9c;
-  --accent: ##7dd3fc;    /* green accent for name + chips */
+  --accent: #7dd3fc;    /* green accent for name + chips */
   --chip-bg: #FFFFFF;
   --chip-border: #45659e;
   --ring: #9ae6b4;
@@ -53,7 +53,8 @@ body{
 }
 
 * { box-sizing: border-box; }
-html, body, #root { height: 100%; }
+html, body { height: auto; }
+#root { min-height: 100%; }
 html { scroll-behavior: smooth; }
 body{
   margin: 0;
@@ -86,7 +87,7 @@ body{
    Header / Navbar
    ----------------------- */
 .site-header{
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: 0; z-index: 1000;
   background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
   height: var(--nav-h);
   box-shadow: 0 1px 0 rgba(255,255,255,.06) inset;
@@ -202,16 +203,7 @@ body{
 .img-frame img{ width: 100%; height: 100%; object-fit: cover; display: block; }
 .img-frame.wide{ height: 320px; }
 .img-frame.tall{ height: 360px; width: min(420px, 50vw); }
-.placeholder{
-  background:
-    linear-gradient(180deg, #e8eef0, #d9e3e6);
-}
-.placeholder::after{
-  content: "";
-  width: 70%; height: 60px; border-radius: 8px;
-  background: repeating-linear-gradient(90deg, #c5d3d8 0 12px, #d5e0e4 12px 24px);
-  opacity: .8;
-}
+
 
 /* -----------------------
    Project
