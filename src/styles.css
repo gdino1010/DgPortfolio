@@ -16,7 +16,7 @@
   --radius: 12px;
   --radius-lg: 18px;
   --shadow: 0 2px 12px rgba(15,23,42,.08);
-  --nav-h: 64px;
+  --nav-h: 80px;
   --input-bg: #f1f3f5;        /* soft grey */
   --input-border: #cfd6dc;
 }
@@ -49,7 +49,7 @@ body{
   transition: background .2s ease;
 }
 .theme-toggle:active{
-  transform: scale(.98);
+    transform: scale(.98);
 }
 
 * { box-sizing: border-box; }
@@ -95,11 +95,17 @@ body{
   height: var(--nav-h);
   display: flex; align-items: center; justify-content: space-between;
 }
-.brand{ display: flex; align-items: center; gap: 10px; color: #e6f4ef; font-weight: 700; letter-spacing: .5px; }
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px; color: #e6f4ef;
+    font-weight: 200;
+    letter-spacing: .5px;
+}
 .brand-name{ font-size: 1.05rem; }
 .nav{ list-style: none; display: flex; gap: 24px; padding: 0; margin: 0; }
 .nav a{
-  color: #e5f2f0; text-decoration: none; font-weight: 500;
+  color: #e5f2f0; text-decoration: none; font-weight: 200;
   padding: 8px 10px; border-radius: 8px;
 }
 .nav a:hover, .nav a:focus{ background: rgba(255,255,255,.08); outline: none; }
@@ -119,8 +125,8 @@ body{
   cursor: pointer;
 
   /* looks like your examples */
-  border: 2px solid rgba(255,255,255,.25);
-  background: rgba(255,255,255,.10);
+  border: 2px solid #000000;
+  background: #ffffff;
   box-shadow:
     0 12px 28px rgba(0,0,0,.25),
     0 0 24px rgba(90,170,255,.30);
@@ -131,7 +137,7 @@ body{
 
 .theme-toggle:hover{
   transform: translateY(-1px);
-  background: rgba(255,255,255,.16);
+  background: #0b4f66;
 }
 
 .theme-toggle:active{
@@ -166,9 +172,9 @@ body{
 .chip-row{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .chip{
   display: inline-block;
-  padding: clamp(6px, 1vw, 10px) clamp(10px, 1.4vw, 20px);
+  padding: clamp(3.5px, .8vw, 4.1px) clamp(15px, 1.4vw, 30px);
   border-radius: 999px;
-  border: 2px solid var(--chip-border);
+  border: 3px solid var(--chip-border);
   background: var(--chip-bg);
   color: #45659e;
   text-decoration: none;
@@ -176,6 +182,11 @@ body{
   font-size: clamp(0.85rem, 0.6vw + 0.8rem, 1.15rem);
 }
 .chip:focus{ outline: 3px solid var(--ring); outline-offset: 1px; }
+
+.chip:hover{
+  box-shadow: 0 6px 25px #325694;
+  transform: translateY(-1px);
+}
 
 /* -----------------------
    Reusable frames for images (with placeholder fallback)

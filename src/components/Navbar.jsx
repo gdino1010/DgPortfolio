@@ -9,31 +9,44 @@ function getInitialTheme() {
     : "light";
 }
 
-function StarLogo({ size = 36, mode = "light" }) {
+function ThemeIcon({ size = 28, mode = "light" }) {
+  const isDark = mode === "dark";
+
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true">
-      <defs>
-        {/* Different gradients for light vs dark */}
-        <linearGradient id="gLight" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="rgb(0, 255, 0)" />
-          <stop offset="1" stopColor="rgb(0, 0, 255)" />
-        </linearGradient>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {/* SUN (light mode) */}
+      {!isDark && (
+        <>
+          <circle cx="12" cy="12" r="4" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </>
+      )}
 
-        <linearGradient id="gDark" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="rgb(120, 200, 255)" />
-          <stop offset="1" stopColor="rgb(30, 120, 255)" />
-        </linearGradient>
-      </defs>
-
-      <polygon
-        points="50,5 62,28 90,30 68,48 74,75 50,62 26,75 32,48 10,30 38,28"
-        fill={mode === "dark" ? "url(#gDark)" : "url(#gLight)"}
-        stroke={mode === "dark" ? "rgba(255,255,255,.35)" : "#0a7a52"}
-        strokeWidth="2"
-      />
+      {/* MOON (dark mode) */}
+      {isDark && (
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+      )}
     </svg>
   );
 }
+
 
 export default function Navbar() {
   const [theme, setTheme] = useState("light");
@@ -65,7 +78,7 @@ export default function Navbar() {
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             title={isDark ? "Light mode" : "Dark mode"}
           >
-            <StarLogo size={34} mode={theme} />
+            <ThemeIcon size={26} mode={theme} />
           </button>
 
           <span className="brand-name">DG</span>
