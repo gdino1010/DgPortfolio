@@ -3,13 +3,12 @@
    ----------------------- */
 :root{
   --bg: #cbc9c8;
-  --white: #ffffff;
-  --black: #000000;
-  --grey: #495057;
-  --brand-1: #45659e;
-  --header-1: var(--brand-1);
-  --header-2: #117d9c;
-  --nameColor: #008aff;
+  --text: #ffffff;
+  --text-2: #495057;
+  --contrast: #000000;
+  --brand-1: #008aff;
+  --header-1: #032e3f;
+  --header-2: #1a809d;
   --input-bg: #f1f3f5;
   --input-border: #cfd6dc;
   --shadow: 0 2px 12px var(--brand-1);
@@ -21,22 +20,13 @@
 
 /* DARK THEME (only overrides what changes) */
 html[data-theme="dark"]{
+  --bg: #1c1c1c;
+  --text: #2d2d2d;
+  --text-2: #a1a1a1;
+  --contrast: #ffffff;
+  --brand-1: #45659e;
   --input-bg: #0f172a;        /* deep blue-grey */
   --input-border: #334155;
-  --bg: #0b1220;
-  --surface: #0f172a;
-  --surface-2: #1f2937;
-  --black: #e5e7eb;
-  --muted: #a3aab6;
-
-  --brand-1: #061f2d;
-  --brand-2: #0b4f66;
-
-  --chip-bg: rgba(255,255,255,.06);
-  --brand-1: rgba(255,255,255,.22);
-  --brand-1: rgba(154,230,180,.45);
-
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
 /* smooth theme transitions */
@@ -57,7 +47,7 @@ html { scroll-behavior: smooth; }
 body{
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
-  color: var(--black);
+  color: var(--contrast);
   background: var(--bg);
   line-height: 1.6;
 }
@@ -68,8 +58,8 @@ body{
   margin-inline: auto;
 }
 .section{ padding: 72px 0; scroll-margin-top: calc(var(--nav-h) + 16px); }
-.muted{ color: var(--grey); }
-.accent{ color: var(--nameColor); }
+.muted{ color: var(--text); }
+.accent{ color: var(--brand-1); }
 .subheading{ margin-top: 1.25rem; font-size: 1.05rem; }
 
 /* Skip link for keyboard users */
@@ -78,7 +68,7 @@ body{
 }
 .skip-link:focus{
   left: 12px; top: 12px; z-index: 1000;
-  background: var(--white); padding: 8px 12px; border-radius: 6px; outline: 2px solid var(--nameColor);
+  background: var(--contrast); padding: 8px 12px; border-radius: 6px; outline: 2px solid var(--brand-1);
 }
 
 /* -----------------------
@@ -120,8 +110,9 @@ body{
   display: grid;
   place-items: center;
   cursor: pointer;
-  border: 2px solid var(--black);
-  background: var(--white);
+  color: var(--contrast);
+  border: 2px solid var(--contrast);
+  background: var(--text);
   box-shadow:
     0 12px 28px rgba(0,0,0,.25),
     0 0 24px rgba(90,170,255,.30);
@@ -132,8 +123,8 @@ body{
 
 .theme-toggle:hover{
   transform: translateY(-1px);
-  color: var(--white);
-  background: var(--black);
+  color: var(--text);
+  background: var(--contrast);
 }
 
 .theme-toggle:active{
@@ -161,7 +152,7 @@ body{
 
 .lead{
     font-size: clamp(.5rem, .9vw + .5rem, 2rem);
-    color: var(--grey);
+    color: var(--text);
     max-width: 62ch; }
 
 /* Chip buttons */
@@ -171,7 +162,7 @@ body{
   padding: clamp(3.5px, .8vw, 4.1px) clamp(15px, 1.4vw, 30px);
   border-radius: 999px;
   border: 3px solid var(--brand-1);
-  background: var(--white);
+  background: var(--text);
   color: var(--brand-1);
   text-decoration: none;
   font-weight: 600;
@@ -183,17 +174,17 @@ body{
   box-shadow: 0 6px 25px var(--brand-1);
   transform: translateY(-1px);
   background: var(--brand-1);
-  color: var(--white);
-  border: 3px solid var(--white);
+  color: var(--text);
+  border: 3px solid var(--text);
 }
 
 /* -----------------------
    Reusable frames for images
    ----------------------- */
 .img-frame{
-  background: var(--white);
+  background: var(--text);
   border-radius: var(--radius);
-  border: 3px solid var(--black);
+  border: 3px solid var(--contrast);
   box-shadow: var(--shadow);
   display: grid; place-items: center;
   overflow: hidden;
@@ -244,10 +235,10 @@ body{
 .card{
   width: min(720px, 100%);
   margin: 0 auto;
-  background: var(--white);
+  background: var(--text);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  border: 1px solid var(--black);
+  border: 1px solid var(--contrast);
   padding: 24px 22px;
 }
 .card h2{ margin: 0 0 12px; text-align: center; }
@@ -264,7 +255,7 @@ body{
   border-radius: 10px;
   border: 1px solid var(--input-border);
   background:var(--input-bg);
-  color: var(--black);
+  color: var(--contrast);
   font: inherit;
 }
 .form input:focus, .form textarea:focus{
@@ -291,12 +282,12 @@ body{
    Footer
    ----------------------- */
 .site-footer{
-  border-top: 1px solid var(--black);
-  background: var(--white);
+  border-top: 1px solid var(--contrast);
+  background: var(--text);
   padding: 18px 0;
 }
 .site-footer nav a{
-  color: var(--black);
+  color: var(--contrast);
 }
 .footer-row{
   display: flex; justify-content: space-between; align-items: center;
