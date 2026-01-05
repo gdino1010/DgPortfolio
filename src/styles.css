@@ -7,12 +7,10 @@
   --surface-2: #e5e7eb;
   --text: #0f172a;
   --muted: #495057;
-  --brand-1: #02354b;/* deep teal/navy */
+  --brand-1: #45659e; /* deep teal/navy */
   --brand-2:#117d9c;
   --accent: #008aff;    /* green accent for name + chips */
   --chip-bg: #FFFFFF;
-  --chip-border: #45659e;
-  --ring: #45659e;
   --radius: 12px;
   --radius-lg: 18px;
   --shadow: 0 2px 12px rgba(15,23,42,.08);
@@ -35,8 +33,8 @@ html[data-theme="dark"]{
   --brand-2: #0b4f66;
 
   --chip-bg: rgba(255,255,255,.06);
-  --chip-border: rgba(255,255,255,.22);
-  --ring: rgba(154,230,180,.45);
+  --brand-1: rgba(255,255,255,.22);
+  --brand-1: rgba(154,230,180,.45);
 
   --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
@@ -143,7 +141,7 @@ body{
 }
 
 .theme-toggle:focus-visible{
-  outline: 3px solid var(--ring);
+  outline: 3px solid var(--brand-1);
   outline-offset: 2px;
 }
 
@@ -172,19 +170,19 @@ body{
   display: inline-block;
   padding: clamp(3.5px, .8vw, 4.1px) clamp(15px, 1.4vw, 30px);
   border-radius: 999px;
-  border: 3px solid var(--chip-border);
+  border: 3px solid var(--brand-1);
   background: var(--chip-bg);
-  color: #45659e;
+  color: var(--brand-1);
   text-decoration: none;
   font-weight: 600;
   font-size: clamp(0.85rem, 0.6vw + 0.8rem, 1.15rem);
 }
-.chip:focus{ outline: 3px solid var(--ring); outline-offset: 1px; }
+.chip:focus{ outline: 3px solid var(--brand-1); outline-offset: 1px; }
 
 .chip:hover{
-  box-shadow: 0 6px 25px #325694;
+  box-shadow: 0 6px 25px var(--brand-1);
   transform: translateY(-1px);
-  background: #45659e;
+  background: var(--brand-1);
   color: var(--chip-bg);
   border: 3px solid #ffffff;
 }
@@ -270,8 +268,8 @@ body{
   font: inherit;
 }
 .form input:focus, .form textarea:focus{
-  outline: 2px solid #325694;
-  border-color: #325694;
+  outline: 2px solid var(--brand-1);
+  border-color: var(--brand-1);
 }
 .span-2{ grid-column: 1 / -1; }
 
@@ -280,7 +278,7 @@ body{
   padding: 10px 22px;
   border-radius: 10px;
   border: none;
-  background: #325694;
+  background: var(--brand-1);
   color: white;
   font-weight: 700;
   cursor: pointer;
