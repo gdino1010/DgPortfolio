@@ -9,10 +9,10 @@
   --muted: #495057;
   --brand-1: #02354b;/* deep teal/navy */
   --brand-2:#117d9c;
-  --accent: #7dd3fc;    /* green accent for name + chips */
+  --accent: #008aff;    /* green accent for name + chips */
   --chip-bg: #FFFFFF;
   --chip-border: #45659e;
-  --ring: #9ae6b4;
+  --ring: #45659e;
   --radius: 12px;
   --radius-lg: 18px;
   --shadow: 0 2px 12px rgba(15,23,42,.08);
@@ -119,13 +119,9 @@ body{
   width: 46px;
   height: 46px;
   border-radius: 14px;
-
   display: grid;
   place-items: center;
-
   cursor: pointer;
-
-  /* looks like your examples */
   border: 2px solid #000000;
   background: #ffffff;
   box-shadow:
@@ -138,7 +134,8 @@ body{
 
 .theme-toggle:hover{
   transform: translateY(-1px);
-  background: #0b4f66;
+  color: #ffffff;
+  background: #000000;
 }
 
 .theme-toggle:active{
@@ -187,22 +184,37 @@ body{
 .chip:hover{
   box-shadow: 0 6px 25px #325694;
   transform: translateY(-1px);
+  background: #45659e;
+  color: var(--chip-bg);
+  border: 3px solid #ffffff;
 }
 
 /* -----------------------
-   Reusable frames for images (with placeholder fallback)
+   Reusable frames for images
    ----------------------- */
 .img-frame{
   background: #fff;
   border-radius: var(--radius);
-  border: 1px solid var(--surface-2);
+  border: 3px solid var(--surface-2);
   box-shadow: var(--shadow);
   display: grid; place-items: center;
   overflow: hidden;
 }
-.img-frame img{ width: 100%; height: 100%; object-fit: cover; display: block; }
-.img-frame.wide{ height: 320px; }
-.img-frame.tall{ height: 360px; width: min(420px, 50vw); }
+.img-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-frame.wide{
+  aspect-ratio: 16 / 9;
+}
+.img-frame.tall{
+  width: 420px;
+  aspect-ratio: 3 / 4;
+  align-self: start;   /* 🔑 stops grid stretching */
+	showing-height: auto;
+}
 
 
 /* -----------------------

@@ -80,8 +80,6 @@ export default function Navbar() {
           >
             <ThemeIcon size={26} mode={theme} />
           </button>
-
-          <span className="brand-name">DG</span>
         </div>
 
         <nav aria-label="Primary">

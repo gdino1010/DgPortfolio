@@ -13,10 +13,10 @@ export default function Hero() {
         </p>
 
         <div className="chip-row" role="group" aria-label="Profile links">
-          <a className="chip" href="#" target="_blank" rel="noopener noreferrer">Resume</a>
-          <a className="chip" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a className="chip" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a className="chip" href="mailto:you@example.com">G‑mail</a>
+          <a className="chip" href="https://docs.google.com/document/d/1P9hlZ689ctmrc5BxC2kwvn4enr8B_xzSk5R0oaVLDDY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="chip" href="https://github.com/gdino1010" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a className="chip" href="https://www.linkedin.com/in/david-gonzalez-163803346/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a className="chip" href="mailto:gonzalez.david0117@gmail.com">G‑mail</a>
         </div>
       </div>
     </div>

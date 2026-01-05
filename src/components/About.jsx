@@ -36,8 +36,7 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="about__photo img-frame tall placeholder">
-          {/* Put /public/profile.jpg to replace the placeholder */}
+        <div className="about__photo img-frame tall ">
           <img
             src="/profile.jpg"
             alt="David holding a guitar outdoors"
