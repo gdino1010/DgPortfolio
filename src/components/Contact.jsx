@@ -15,12 +15,7 @@ export default function Contact() {
             <input type="email" name="email" autoComplete="email" />
           </label>
 
-          <label>
-            <span>Phone Number</span>
-            <input type="tel" name="phone" autoComplete="tel" />
-          </label>
-
-          <label>
+          <label className="span-2">
             <span>Subject</span>
             <input type="text" name="subject" />
           </label>
