@@ -82,6 +82,16 @@ export default function Navbar() {
           </button>
         </div>
 
+        {/*
+        <div className="img-logo">
+                                          <img
+                                              src="/DG_Logo2.png"
+                                              alt="DG Logo"
+                                              onError={(e) => (e.currentTarget.style.display = 'none')}
+                                              />
+                                      </div>
+                                      */}
+
         <nav aria-label="Primary">
           <ul className="nav">
             <li><a href="#intro">Intro</a></li>
