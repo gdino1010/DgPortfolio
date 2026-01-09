@@ -3,14 +3,13 @@ export default function Hero() {
     <div className="container hero">
       <div className="hero__text">
         <h1 className="hero__title">
-          Hi! My name is <span className="accent">David Gonzalez</span>.<br/>
+          Hiiiiiiiii! My name is <span className="accent">David Gonzalez</span>.<br/>
           I&apos;m a Software Engineer from Sacramento, CA.
         </h1>
 
         <p className="lead">
-          II specialize in delivering high‑quality, performant, and accessible interfaces
-          using React
-.
+          I specialize in delivering high‑quality, performant, and accessible interfaces
+          using React.
         </p>
 
         <div className="chip-row" role="group" aria-label="Profile links">
