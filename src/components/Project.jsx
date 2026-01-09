@@ -19,7 +19,7 @@ export default function Project() {
       <div className="img-frame wide placeholder">
         {/* Put /public/alphaanswers.jpeg to replace the placeholder */}
         <img
-          src="public/alphaanswers.jpeg"
+          src="/alphaanswers.jpeg"
           alt="AlphaAnswers quiz screen"
           onError={(e) => (e.currentTarget.style.display = 'none')}
         />

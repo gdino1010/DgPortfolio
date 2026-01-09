@@ -38,7 +38,7 @@ export default function About() {
 
         <div className="about__photo img-frame tall ">
           <img
-            src="public/profile.jpg"
+            src="/profile.jpg"
             alt="David holding a guitar outdoors"
             onError={(e) => (e.currentTarget.style.display = 'none')}
           />
