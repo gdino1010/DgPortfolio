@@ -4,8 +4,12 @@ export default function Project() {
       <h2>AlphaAnswers</h2>
 
       <p className="muted">
-        Led a team to make education more interactive. The platform allows teachers to
-        create and grade quizzes, while students can take quizzes and view their results.
+        A full-stack quiz web application built using the MERN stack and deployed on Vercel and Render.
+        I served as Project Manager, leading a team of seven developers and overseeing the project from planning
+        through deployment. I designed the overall architecture, documented clear technical requirements,
+        and ensured the team could execute confidently without ambiguity or overlooked edge cases.
+        Throughout development, I acted as the primary problem-solver, addressing technical challenges,
+        answering questions, and keeping the team aligned to maintain steady progress and high productivity.
       </p>
 
       <p className="tools">

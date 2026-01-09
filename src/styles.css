@@ -292,6 +292,53 @@ body{
 }
 
 /* -----------------------
+   Toast & Errors
+   ----------------------- */
+
+.field-error {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #b00020;
+}
+
+.toast {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast-box {
+  pointer-events: auto;
+  min-width: 280px;
+  max-width: 90vw;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toast.success .toast-box { background: #0f5132; }
+.toast.error .toast-box { background: #842029; }
+
+.toast-close {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+
+/* -----------------------
    Responsive
    ----------------------- */
 @media (max-width: 900px){

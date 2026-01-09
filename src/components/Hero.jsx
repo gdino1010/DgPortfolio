@@ -9,7 +9,8 @@ export default function Hero() {
 
         <p className="lead">
           I specialize in delivering high‑quality, performant, and accessible interfaces
-          using React, TypeScript, and Next.js.
+          using React
+.
         </p>
 
         <div className="chip-row" role="group" aria-label="Profile links">
