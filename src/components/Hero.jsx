@@ -8,7 +8,7 @@ export default function Hero() {
         </h1>
 
         <p className="lead">
-          I specialize in delivering high‑quality, performant, and accessible interfaces
+          II specialize in delivering high‑quality, performant, and accessible interfaces
           using React
 .
         </p>

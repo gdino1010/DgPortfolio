@@ -40,7 +40,7 @@ export default function About() {
           <img
             src="/profile.jpg"
             alt="David holding a guitar outdoors"
-            onError={(e) => (e.currentTarget.style.display = 'none')}
+            {/*onError={(e) => (e.currentTarget.style.display = 'none')}*/}
           />
         </div>
       </div>
