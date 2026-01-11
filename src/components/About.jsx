@@ -6,33 +6,31 @@ export default function About() {
       <div className="about__grid">
         <div className="about__text">
           <p>
-            I&apos;m a passionate Frontend Developer with over 5 years of experience
-            creating scalable and dynamic web applications. My most recent work experience
-            is with Kiyo, building a web app that provides an alternative to the traditional
-            real estate market.
+            I’m a Computer Science student at California State University, Sacramento with a
+            strong interest in frontend and full-stack development. I enjoy building clean,
+            responsive, and user-focused web applications, and I’m particularly experienced
+            working with React and the MERN stack.
           </p>
           <p>
-            In addition to my development work, I taught at CodeWizardHQ, where I instructed
-            a variety of courses ranging from beginner web development to advanced programming
-            topics like game development and Object‑Oriented Programming.
+            Through academic projects like AlphaAnswers, I’ve gained hands-on experience
+            designing application architecture, collaborating in team environments, and
+            leading development efforts from planning through deployment. As a Project
+            Manager on a team of seven, I focused on clear documentation, problem-solving,
+            and keeping development organized and efficient.
           </p>
           <p>
-            I&apos;m currently seeking new opportunities to work on exciting projects with a team
-            that values collaboration, innovation, and continuous learning. If you&apos;re
-            interested in working together, feel free to reach out via email or any of my social media profiles.
+            In addition to software development, my professional experience has strengthened
+            my teamwork, organization, and communication skills. I’m currently seeking internship
+            or entry-level opportunities where I can continue learning, contribute meaningfully
+            to real-world projects, and grow as a software engineer.
           </p>
 
           <h3 className="subheading">Technologies I use</h3>
           <ul className="tech-list">
-            <li>JavaScript (ES6+)</li>
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Tailwind</li>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
+              <li>Frontend: React</li>
+            <li>Languages: Java, Python, C</li>
+            <li>Backend & Databases: Node.js, Express.js, MongoDB, MySQL</li>
+            <li>Tools: Git, GitHub, Vercel, Render</li>
           </ul>
         </div>
 

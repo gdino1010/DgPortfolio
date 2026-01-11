@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="container hero">
       <div className="hero__text">
         <h1 className="hero__title">
-          Hiiiiiiiii! My name is <span className="accent">David Gonzalez</span>.<br/>
+          Hi! My name is <span className="accent">David Gonzalez</span>.<br/>
           I&apos;m a Software Engineer from Sacramento, CA.
         </h1>
 
