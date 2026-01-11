@@ -27,10 +27,10 @@ export default function About() {
 
           <h3 className="subheading">Technologies I use</h3>
           <ul className="tech-list">
-              <li>Frontend: React</li>
-            <li>Languages: Java, Python, C</li>
-            <li>Backend & Databases: Node.js, Express.js, MongoDB, MySQL</li>
-            <li>Tools: Git, GitHub, Vercel, Render</li>
+                <li>Frontend: React</li>
+                <li>Languages: Java, Python, C</li>
+                <li>Backend & Databases: Node.js, Express.js, MongoDB, MySQL</li>
+                <li>Tools: Git, GitHub, Vercel, Render</li>
           </ul>
         </div>
 
